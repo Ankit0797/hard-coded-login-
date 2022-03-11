@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        function login() {
+            const ID = document.getElementById("idd").value;
+            const PASSWORD = document.getElementById("pass").value;
+            console.log(ID, PASSWORD);
+
+            EmpID=['INT9159','INT9158',"INT9199"]
+            
+            if ((EmpID.includes(ID))==true){
+                if(ID=='INT9159' && PASSWORD=='aaaa12'){
+                    console.log('INT9159 HIT')
+                }
+                if(ID=='INT9158' && PASSWORD=='aaaa123'){
+                    console.log('INT9158 HIT')
+                }
+                if(ID=='INT9199' && PASSWORD=='aaaa1234'){
+                    console.log('INT9199 HIT')
+                }
+            }
+            else{
+                console.log("not present");
+            }
+        }
+
+    </script>
+
+
+    <div class="container">
+        
+
+
+            <label for="">ID: </label>
+            <input type="text" id="idd" value="INT">
+
+            <label for="">Password: </label>
+            <input type="password" id="pass">
+
+            <input type="submit" value="submit" onclick="login()">
+            </div>
+</body>
+
+</html>
